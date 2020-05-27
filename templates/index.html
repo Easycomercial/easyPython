@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EasySystems - Software Online de Contabilidad y RRHH</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/css.css')}}">
+        <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
+        <script ></script>
+        <style>
+            .slider{
+                background-image: "{{url_for('static',filename='/img/Easysystems-portada-principal-2.jpg')}}"
+                background-size: cover;
+                background-position: center;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="MiniContacto">
+            Escríbenos: 𝘃𝗲𝗻𝘁𝗮𝘀@𝗲𝗮𝘀𝘆𝘀𝘆𝘀𝘁𝗲𝗺𝘀.𝗰𝗹
+            Llámanos: (2) 29291592
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="{{url_for('static',filename='/img/Logosystem.png')}}" id="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="nav">
+                <ul class="nav" id="SeparacionNav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#conta">Contabilidad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rrhh">Recursos Humanos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#erp">ERP + FE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#planes">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary">
+                          <a class="text-white" href="#contacto">Contactanos</a></button>
+                    </li>
+                    </ul>
+              </div>
+            </div>
+          </nav>
+
+          <section>
+            <div class="container-fluid portada" id="portada">
+              <div class="container d-flex flex-column justify-content-center h-75 align-items-start">
+                <h1>Es el momento de llevar</h1> 
+                <h4>TU CONTABILIDAD <br> MÁS FÁCIL <br> QUE NUNCA </h4>
+                <br>
+                <button type="button" class="btn btn-primary">Ver Planes</button>
+              </div>
+            </div>
+          </section>
+
+<section id="conta">
+    <div class="container py-5">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+          <img src="{{url_for('static',filename='/img/Recurso-19.png')}}">
+          <br><br><br><br>
+          <img src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Plataforma pensada para todas aquellas entidades    que deben<br> llevar la contabilidad tanto de personas físicas como jurídicas.<p></p>
+          <img src="{{url_for('static',filename='/img/vinculo-sii_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Es una solución 100% web sin aplicaciones de escritorio lo que <br>aumenta su velocidad y accesibilidad ademas de generar la <br>importación automática de los libros de compra y venta desde <br>el Servicio de Impuestos Internos.</p>
+          <img src="{{url_for('static',filename='/img/migracion-de-datos2_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Formatos estándar adaptado para la importación y<br> exportación de datos para su presentación.</p>
+      </div>
+        <div class="col-md-6">
+          <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" alt="" width="800px">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="rrhh">
+    <div class="container py-3">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+          <img src="img/Pantalla-recursos-humanos.png" class="img-fluid" alt="" width="800px">
+        </div>
+      <div class="col-md-6">
+        </br> <img src="img/Recurso-22.png" >
+          <br><br><br>
+      <img src="img/administracion-personal_Mesa-de-trabajo-1.png">
+      <br><br>
+      <p style="font-size: 15px;">Plataforma que colabora con la administración del personal<br> gracias a ser un sistema 100% online, versátil y completo,<br> permitiendo a los usuarios ingresar, visualizar y exportar<br> información tanto global como individual de cada empleado.<p>
+        <img src="img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png">
+        <br><br>
+        <p style="font-size: 15px;">Además, el sistema puede vincularse con el sistema CME<br> exportando los datos necesarios para hacer el pago y registro<br> en los balances de las empresas.</p>
+        <img src="img/modulos-complementarios_Mesa-de-trabajo-1.png">
+        <br><br>
+        <p style="font-size: 15px;">Adicionalmente a estas funcionalidades puede solicitar un<br> modulo complementario para el trabajador con el fin de que<br> este tenga acceso a documentación, certificados e <br>información.</p>
+    </div>
+      </div>
+    </div>
+</section>    
+    
+  <section id="erp">
+    <div class="container py-">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+        </br> <img src="img/erp.png">
+        <br><br><br>
+        <img src="img/administracion-de-inventario_Mesa-de-trabajo-1.png">
+        <br><br>
+        <img src="img/emision-de-cotizaciones_Mesa-de-trabajo-1.png">
+        <br><br>
+        <img src="img/controles-de-venta_Mesa-de-trabajo-1.png">
+        <br><br>
+        <img src="img/informes-gerenciales_Mesa-de-trabajo-1.png">
+          
+
+      </div>
+      <div class="col-md-6">
+        <img src="img/Pantalla-verde.png" class="img-fluid" alt="" width="800px">
+     
+     
+    </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section>
+      <div class="container-fluid fondo" id="responsive">
+        <div class="container d-flex flex-column justify-content-center h-100 align-items-center text-white">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>Trabajo 100% online</h1>
+              <p>Plataformas online para Gestiones Contables y Recursos Humanos, las cuales se adaptan a tus necesidades.</p>
+            </div>
+            <div class="col-sm-6">
+              <h1>No requiere instalaciones</h1>
+              <p>Facilidad de uso para cualquier persona, solamente con un computador con requerimientos básicos.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>Soporte técnico</h1>
+              <p>Totalmente especializado, al momento de tener alguna confusión o problema nuestro equipo te guiará y te ayudará a solucionarlo.</p>
+            </div>
+            <div class="col-sm-6">
+              <h1>Sin riesgo a perder información</h1>
+              <p>Nuestro sistema guarda completamente toda la información generada y crea un respaldo adicional en servidores externos, lo que garantiza el tratamiento y seguridad de los datos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="planes">
+      <div class="container py-5 ">
+      <div> <center>
+         <h2 style="font-size: 50px;">Nuestros Planes</h2>
+          <p><b>Todos nuestros precios son de planes anuales y van + IVA</b></p> </center>
+      </div>
+    </div>
+    
+    <div class="container-fluid py-2">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-header" id="cardd1">
+              <h3>Contabilidad</h3>
+              <h6>Multi Empresas</h6>
+            </div>
+            <div class="card-block">
+              <div>
+                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+              </div>
+              <h6 class="card-title">PAGO ANUAL</h6>
+              <p class="card-text">50 Empresas</p>
+              <p class="card-text">2 Usuarios</p>
+              <br>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-header" id="cardd2">
+              <h3>Recursos Humanos</h3>
+              <h6>Remuneraciones</h6>
+            </div>
+            <div class="card-block">
+              <div>
+                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+              </div>
+              <h6 class="card-title">PAGO ANUAL</h6>
+              <p class="card-text">50 Empresas</p>
+              <p class="card-text">2 Usuarios</p>
+              <p class="card-text">200 Trabajadores</p>
+              <br>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-header" id="cardd3">
+              <h3>Contabilidad + Recursos Humanos</h3>
+              <h6>Paquete mixto</h6>
+            </div>
+            <div class="card-block">
+              <div>
+                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+              </div>
+              <h6 class="card-title">PAGO ANUAL</h6>
+              <p class="card-text">50 Empresas</p>
+              <p class="card-text">2 Usuarios</p>
+              <br>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="#" class="btn_3 ">QUIERO COTIZAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-header" id="cardd1">
+              <h3>ERP + FE</h3>
+              <h6>Administración</h6>
+            </div>
+            <div class="card-block">
+              <div>
+                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+              </div>
+              <h6 class="card-title">PAGO ANUAL</h6>
+              <p class="card-text">Sujeto a evaluación</p>
+              <br>
+            </div>
+            <div class="card-footer text-muted">
+              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+            
+
+
+<section class="bg-light" id="contacto">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6" id="formulario">
+          <h6>Maneja como todo un profesional tu</h6>
+          <h1>CONTABILIDAD</h1>
+          <p>Contáctate con nosotros mediante el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
+        </div>
+        <div class="col-md-6">
+          <form action="#" class="col justify-content-center">
+            <div class="row form-group">
+              <input type="text" placeholder="¿Cuál es tu nombre?" class="form-control">
+            </div>
+            <div class="row form-group">
+              <input type="email" placeholder="Correo Electronico" class="form-control col-6">
+              <input type="text" placeholder="Teléfono" class="form-control col-6">
+            </div>
+            <div class="row form-group">
+              <input type="text" placeholder="¿Tienes alguna duda?" class="form-control">
+            </div>
+            <div class="row justify-content-center">
+            <button class="btn btn-primary col-12">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mr-0 mt-0">
+
+        <!-- Content -->
+        <div id="footerizq">
+        <img src="img/Logosystem.png" id="logofoo">
+        
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-3 mt-0">
+
+        <!-- Links -->
+        <div id="footercentro">
+          <p>Diseño realizado por <a href="#">MORE | Studio Creativo</a></p>
+      </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4  mb-3 mt-0">
+
+        <!-- Links -->
+        <div id="footerderecha">
+        <p>©2020 EASY SYSTEMS | Todos los derechos reservados</p>
+      </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+
+
+    </body>
+</html>

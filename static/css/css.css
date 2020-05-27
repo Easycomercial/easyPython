@@ -1,0 +1,154 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#logo{
+    width: 125px;
+}
+
+.portada{
+  background-image: url('../img/Easysystems-portada-principal-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vmax;
+  
+}
+
+.fondo{
+  background-image: url('../img/fondo-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+  text-align: center;
+}
+
+#MiniContacto{
+    background-color: rgb(47, 89, 143);
+    color: white;
+    text-align: right;
+    padding: 10px 30px;
+}
+
+#SeparacionNav{
+    padding: 20px;
+}
+
+#seccion{
+  margin: 10px 0px;
+}
+
+#SeparacionNav{
+    padding: 20px;
+}
+
+#portada h1{
+  font-size: 2vw;
+}
+
+#portada h4{
+  font-size: 4vw;
+}
+
+#responsive h1{
+  font-size: 3vw;
+}
+#responsive p{
+  font-size: 2vw;
+}
+
+#formulario{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#formulario h1{
+  font-size: 45px;
+
+  }
+ 
+  
+  #cardd1{
+    text-align: center;
+    background-color: #095589;
+    color: white;
+    border-radius: 5px;
+    height: 90px;
+    
+  }
+  #cardd2{
+    text-align: center;
+    background-color: #095589;
+    color: white;
+    border-radius: 5px;
+    height: 120px;
+    
+  }
+  #cardd3{
+    text-align: center;
+    background-color: #098789;
+    color: white;
+    border-radius: 5px;
+    height: 150px;
+    
+  }
+  #cardd4{
+    text-align: center;
+    background-color: #095589;
+    color: white;
+    border-radius: 5px;
+    height: 90px;
+    
+  }
+  .card-body{
+    text-align: center;
+  }
+  .btn_1{
+    color: white;
+    background-color: #095589;
+    border-radius: 30px;
+    border-width: 1px;
+    padding: 5px 10px;
+
+  }
+  .btn_3{
+    color: white;
+    background-color: #098789;
+    border-radius: 30px;
+    border-width: 1px;
+    padding: 5px 10px;
+
+  }
+  .card-body{
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+
+  #uf2{
+    position: absolute;
+    right: 60%;
+  }
+  #uf3{
+    position: absolute;
+    right: 60%;
+  }
+  #uf4{
+    position: absolute;
+    right: 60%;
+  }
+  #footercentro{
+    text-align: center;
+  }
+  #footerderecha{
+   text-align: right;
+ }
+ #logofoo{
+   width: 90px;
+   margin: -5px 90px;
+   
+ }
+ .page-footer{
+   background-color: #e3e4e5;
+   
+ }
+ 
+
