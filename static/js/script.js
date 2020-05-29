@@ -1,7 +1,10 @@
-document.addEventListener("DOMContentLoaded",function(){
+
+document.addEventListener("DOMContentLoaded",function()
+{
     document.getElementById("phone").addEventListener("keypress",isNumberKey,{once:false});
     document.getElementById("phone").addEventListener("paste",isNumberKey,{once:false});
 });
+
 
 function isNumberKey(evt) {
     var theEvent = evt || window.event;
@@ -17,7 +20,7 @@ function isNumberKey(evt) {
     }
     var regex = /[0-9]|\./;
     if( !regex.test(key) ) {
-      theEvent.returnValue = false;
-      if(theEvent.preventDefault) theEvent.preventDefault();
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) theEvent.preventDefault();
     }
-  };
+};

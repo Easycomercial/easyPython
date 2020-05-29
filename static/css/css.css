@@ -23,10 +23,10 @@ html{
 }
 
 #MiniContacto{
-    background-color: rgb(47, 89, 143);
-    color: white;
-    text-align: right;
-    padding: 10px 30px;
+  background-color: rgb(47, 89, 143);
+  color: white;
+  text-align: right;
+  padding: 10px 30px;
 }
 
 #SeparacionNav{
@@ -35,6 +35,8 @@ html{
 
 #seccion{
   margin: 10px 0px;
+  position:auto;
+  z-index:0;
 }
 
 #SeparacionNav{
@@ -150,11 +152,3 @@ html{
    background-color: #e3e4e5;
    
  }
- 
- .numbersonly { 
-   -webkit-appearance: none; 
-   -moz-appearance: textfield;
-   margin: 0; 
- }
-
-
