@@ -1,21 +1,15 @@
-
-// document.addEventListener('DOMContentLoaded',function()
-// {
-//     document.querySelector('#phone').addEventListener('input',isNumberKey)
-// })
-$(document).ready(function(){
-    $('[id^=phone]').keypress(isNumberKey)
-    $('[id^=phone]').bind("paste",isNumberKey)
+document.addEventListener("DOMContentLoaded",function(){
+    document.getElementById("phone").addEventListener("keypress",isNumberKey,{once:false});
+    document.getElementById("phone").addEventListener("paste",isNumberKey,{once:false});
 });
-
 
 function isNumberKey(evt) {
     var theEvent = evt || window.event;
-    //console.log("key event")
+    console.log("key event")
     // Handle paste
     if (theEvent.type === 'paste') {
         key = (event.clipboardData || window.clipboardData).getData('text/plain');
-        //console.log("Pasted key=%s",key)
+        console.log("Pasted key=%s",key)
     } else {
     // Handle key press
         var key = theEvent.keyCode || theEvent.which;
@@ -26,4 +20,4 @@ function isNumberKey(evt) {
       theEvent.returnValue = false;
       if(theEvent.preventDefault) theEvent.preventDefault();
     }
-  }
+  };

@@ -17,7 +17,7 @@ def index():
 
 @app.route("/#contacto", methods=["POST"])
 def contacto():
-    if request.method() == "POST":
+    if request.method == "POST":
         name = request.form.get("name")
         email = request.form.get("email")
         phone = request.form.get("phone")
