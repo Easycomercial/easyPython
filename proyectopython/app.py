@@ -12,7 +12,7 @@ mail_settings = {
 	"MAIL_USE_TLS":True,
 	"MAIL_USE_SSl":False,
 	"MAIL_USERNAME":'estebansanchezga@gmail.com',
-	"MAIL_PASSWORD":'20109887'
+	"MAIL_PASSWORD":'contraseñafalsa'
 	}
 
 app.config.update(mail_settings)
@@ -34,7 +34,6 @@ def forma():
 	addcon = conta(nombre = name, email = email, telefono = cell, dudas = desc)
 	db.session.add(addcon)
 	db.session.commit()
-	return render_template("index.html", message="insertado con exito")
 	with app.app_context():
 		msg = Message(
 			subject="Mensaje de prueba",
@@ -42,8 +41,8 @@ def forma():
 			recipients=['estebandidoedm@gmail.com'],
 			body="Hola, mi nombre es " + name + "\ncon email : " + email + "\nteléfono: " + cell + "\n Y tengo la siguiente duda:\n " + desc+"\n"
 			)
-		print(msg)
 		mail.send(msg)
+	return render_template("index.html", message="insertado con exito")
 
 if __name__ == "__main__":
 
