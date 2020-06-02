@@ -8,9 +8,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 
 def main():
-	db.create_all()
-	addcon = conta(nombre = "esteban", email = "esteband@gmail.cl", telefono = 123453, dudas = "ninguna")
-	db.session.add(addcon)
+
 	conta.query.all()
 	db.session.commit()
 	
