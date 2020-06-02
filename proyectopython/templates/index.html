@@ -270,14 +270,14 @@
         <div class="col-md-6">
           <form action="{{ url_for('forma') }}" method="post" class="col justify-content-center">
             <div class="row form-group">
-              <input name="nombre" type="text" placeholder="¿Cuál es tu nombre?" class="form-control">
+              <input name="nombre" type="text" required placeholder="¿Cuál es tu nombre?" class="form-control">
             </div>
             <div class="row form-group">
-              <input name="email" type="email" placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefono" type="integer" placeholder="Teléfono" class="form-control col-6">
+              <input name="email" type="email" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefono" type="number" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
             </div>
             <div class="row form-group">
-              <input name="dudas" type="text" placeholder="¿Tienes alguna duda?" class="form-control">
+              <input name="dudas" type="text" required placeholder="¿Tienes alguna duda?" class="form-control">
             </div>
             <div class="row justify-content-center">
             <button type=submit class="btn btn-primary col-12">Enviar</button>
