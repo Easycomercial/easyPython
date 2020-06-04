@@ -7,7 +7,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='/css/css.css')}}">
         <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
-        <script ></script>
+        <script src="{{url_for('static',filename='/javascript/java.js')}}" ></script>
         <style>
             .slider{
                 background-image: "{{url_for('static',filename='/img/Easysystems-portada-principal-2.jpg')}}"
@@ -268,25 +268,25 @@
           <p>Contáctate con nosotros mediante el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
         </div>
         <div class="col-md-6">
-          <form action="{{ url_for('forma') }}" method="post" class="col justify-content-center">
+          <form action="{{ url_for('forma') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
             <div class="row form-group">
-              <input name="nombre" type="text" required placeholder="¿Cuál es tu nombre?" class="form-control">
+              <input name="nombre" type="text" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
             </div>
             <div class="row form-group">
-              <input name="email" type="email" required placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefono" type="number" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+              <input name="email" type="email" id="correo" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefono" type="number" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
             </div>
             <div class="row form-group">
-              <input name="dudas" type="text" required placeholder="¿Tienes alguna duda?" class="form-control">
+              <input name="dudas" type="text" id="dudas" required placeholder="¿Tienes alguna duda?" class="form-control">
             </div>
             <div class="row justify-content-center">
-            <button type=submit class="btn btn-primary col-12">Enviar</button>
+            <button type=submit class="btn btn-primary col-12" >Enviar</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    
+    </section>
     <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
