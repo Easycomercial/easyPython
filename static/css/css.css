@@ -150,5 +150,9 @@ html{
    background-color: #e3e4e5;
    
  }
+ #modalt{
+  width: 30% !important;
+  background-color: #000;
+ }
  
 

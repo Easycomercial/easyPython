@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="{{url_for('static', filename='/css/css.css')}}">
         <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
         <script src="{{url_for('static',filename='/javasc/javas.js/')}}"></script>
+        
         <style>
 
             .slider{
@@ -263,21 +264,42 @@
     </section>
     <!-- Modal -->
 <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog" id="modalt" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <center>
+        <h1>COTIZAR PLANES</h1>
+        <P> Rellena el siguiente formulario con tus datos y nos comunicaremos a la brevedad</P>
+      </center>
+      <script src="{{url_for('static',filename='/javasc/validaciones.js/')}}"></script>
+          <form action="{{ url_for('planc') }}" method="post" onsubmit="return validacionpl()" class="col justify-content-center">
+            <div class="row form-group">
+              <input type="text" name="nombreclie" id="nombreclie" required placeholder="Nombre y Apellido" class="form-control">
+            </div>
+            <div class="row form-group">
+              <input type="email" name="emailclie" id="emailclie" required placeholder="Correo" class="form-control col-6">
+              <input type="number" name="telefonoclie" id="telefonoclie" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
+            </div>
+            <div class="row form-group">
+              <select type="text" name="planclie" id="planclie" required placeholder="Contabilidad" class="form-control">
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="Recursos humanos">Recursos humanos</option>
+                <option value="Contabilidad + RRHH">Contabilidad + RRHH</option>
+                <option value="ERP + FE">ERP + FE</option>
+              </select>
+            </div>
+            <div class="row justify-content-center">
+            <button type="submit" class="btn btn-primary col-12">Solicitar Cotizacion</button>
+            </div>
+          </form>
+
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -295,14 +317,14 @@
         <div class="col-md-6">
           <form action="{{ url_for('formul') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
             <div class="row form-group">
-              <input type="text" name="nombre" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
+              <input name="nombre" type="text" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
             </div>
             <div class="row form-group">
-              <input type="email" name="email" id="email" id="email" required placeholder="Correo Electronico" class="form-control col-6">
-              <input type="number" name="telefono" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
+              <input name="email" type="email" id="email" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefono" type="number" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
             </div>
             <div class="row form-group">
-              <input type="text" name="dudas" id="dudas" required placeholder="¿Tienes alguna duda?" class="form-control">
+              <input name="dudas" type="text" id="dudas" required placeholder="¿Tienes alguna duda?" class="form-control">
             </div>
             <div class="row justify-content-center">
             <button type="submit" class="btn btn-primary col-12">Enviar</button>
