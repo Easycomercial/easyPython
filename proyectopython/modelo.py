@@ -10,3 +10,11 @@ class conta(db.Model):
 	telefono = db.Column(db.Integer,nullable=False, primary_key= False)
 	dudas= db.Column(db.String,nullable=False, primary_key= False)
 
+class planes(db.Model):
+	__tablename__ = "planes"
+	id_plan = db.Column(db.Integer,nullable=False, primary_key= True)
+	nombre_cli = db.Column(db.String,nullable=False, primary_key= False)
+	email_cli = db.Column(db.String,nullable=False, primary_key= False)
+	fono_cli = db.Column(db.Integer,nullable=False, primary_key= False)
+	plan= db.Column(db.String,nullable=False, primary_key= False)
+

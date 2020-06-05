@@ -7,7 +7,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='/css/css.css')}}">
         <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
-        <script src="{{url_for('static',filename='/javascript/java.js')}}" ></script>
         <style>
             .slider{
                 background-image: "{{url_for('static',filename='/img/Easysystems-portada-principal-2.jpg')}}"
@@ -163,6 +162,8 @@
     </section>
     
     <section id="planes">
+    	        	 <script src="{{url_for('static',filename='/javascript/ventanamodal.js')}}" >
+        	 </script>
       <div class="container py-5 ">
       <div> <center>
          <h2 style="font-size: 50px;">Nuestros Planes</h2>
@@ -188,7 +189,7 @@
               <br>
             </div>
             <div class="card-footer text-muted">
-              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+              <button type="button" class="btn_1" values="coplan1" onclick="click_de_boton(1)">QUIERO COTIZAR</a>
             </div>
           </div>
         </div>
@@ -209,7 +210,7 @@
               <br>
             </div>
             <div class="card-footer text-muted">
-              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+              <button type="button" class="btn_1" values="coplan2" onclick="click_de_boton(2)">QUIERO COTIZAR</a>
             </div>
           </div>
         </div>
@@ -229,7 +230,7 @@
               <br>
             </div>
             <div class="card-footer text-muted">
-              <a href="#" class="btn_3 ">QUIERO COTIZAR</a>
+              <button type="button" class ="btn_1" values="coplan3" onclick="click_de_boton(3)">QUIERO COTIZAR</a>
             </div>
           </div>
         </div>
@@ -248,15 +249,56 @@
               <br>
             </div>
             <div class="card-footer text-muted">
-              <a href="#" class="btn_1 ">QUIERO COTIZAR</a>
+              <button type="button" class="btn_1" values="coplan4" onclick="click_de_boton(4)">QUIERO COTIZAR</a>
             </div>
+
+            
           </div>
         </div>
       </div>
     </div>
 
     </section>
-            
+    <!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<center>
+      		<h1>Cotizar Planes</h1>
+      		<p>Rellena el siguiente formulario con tus datos y nos comunicaremos contigo a la brevedad</p>
+      	</center>
+        	 <script src="{{url_for('static',filename='/javascript/validacioncotizacion.js')}}" >
+        	 </script>
+          <form action="{{ url_for('plan') }}" method="post" onsubmit="return validar()" class="col justify-content-center">
+            <div class="row form-group">
+              <input name="nomcli" type="text" id="nomcli" required placeholder="Nombre y apellido" class="form-control">
+            </div>
+            <div class="row form-group">
+              <input name="emailcli" type="email" id="correocli" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefonocli" type="number" id="telefonocli" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+            </div>
+            <div class="row form-group">
+              <select name="plan" id="plan" required placeholder="¿Tienes alguna duda?" class="form-control">
+              	<option value="Contabilidad">Contabilidad</option>
+  				<option value="RRHH">Recursos Humanos</option>
+  				<option value="Contabilidad+RRHH">Contabilidad + Recursos humanos</option>
+  				<option value="ERP+FE">ERP + FE</option>
+              </select>
+            </div>
+            <div class="row justify-content-center">
+            <button type=submit class="btn btn-primary col-12" >Solicitar cotización</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <section class="bg-light" id="contacto">
@@ -268,6 +310,8 @@
           <p>Contáctate con nosotros mediante el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
         </div>
         <div class="col-md-6">
+        	 <script src="{{url_for('static',filename='/javascript/validacioncontacto.js')}}" >
+        	 </script>
           <form action="{{ url_for('forma') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
             <div class="row form-group">
               <input name="nombre" type="text" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
