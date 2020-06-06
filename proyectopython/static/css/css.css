@@ -151,3 +151,16 @@ html{
    
  }
  
+.modal-body {
+         background-image: url('../img/azulgradiante.jpg');
+}
+
+.modal-body h1{
+  color: white;
+}
+.modal-body p{
+  color: white;
+}
+.modal-body span{
+  color: white;
+}
