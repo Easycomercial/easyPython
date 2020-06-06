@@ -150,9 +150,19 @@ html{
    background-color: #e3e4e5;
    
  }
- #modalt{
-  width: 30% !important;
-  background-color: #000;
+ #modalvisual1{
+  width: 100% !important;
+  background-image: url('../img/fondomodal.jpeg');
+ }
+ #letramodal{
+  color: white;
+ }
+ #closec{
+  color: white;
+ }
+ #btnmodal{
+  color: white;
+  background-color: #000
+  
  }
  
-
