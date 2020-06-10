@@ -31,6 +31,7 @@ html{
 
 #SeparacionNav{
     padding: 20px;
+
 }
 
 #seccion{
@@ -47,13 +48,14 @@ html{
 
 #portada h4{
   font-size: 4vw;
+  font-weight: 900;
 }
 
 #responsive h1{
-  font-size: 3vw;
+  font-size: 2vw;
 }
 #responsive p{
-  font-size: 2vw;
+  font-size: 1,5vw;
 }
 
 #formulario{
@@ -165,4 +167,45 @@ html{
   background-color: #000
   
  }
- 
+ .nav-link1{
+  color: black;
+  padding: 20px
+ }
+ .btncnt{
+  color: white;
+    background-color: #095589;
+    border-radius: 30px;
+    border-width: 1px;
+    padding: 5px 10px;
+ }
+ #nplanes h2{
+font-weight: 900;
+ }
+ .card-title1 h6{
+  color: #999;
+ }
+ #pgan {
+  color: #999;
+ }
+ .cardpgan {
+  color: #999;
+ }
+ #cardd1 h6{
+  color: rgba(225,225,225,.7);
+ }
+ #cardd2 h6{
+  color: rgba(225,225,225,.7);
+ }
+ #cardd3 h6{
+  color: rgba(225,225,225,.7);
+ }
+ #formulario h6{
+  font-weight: 800;
+ }
+ #formulario h1{
+  font-weight: 900;
+ }
+ #formulario p{
+  font-weight: 800;
+ }
+

@@ -36,19 +36,19 @@
               <div class="nav">
                 <ul class="nav" id="SeparacionNav">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#conta">Contabilidad</a>
+                      <a class="nav-link1 active" href="#conta">Contabilidad</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#rrhh">Recursos Humanos</a>
+                      <a class="nav-link1" href="#rrhh">Recursos Humanos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#erp">ERP + FE</a>
+                      <a class="nav-link1" href="#erp">ERP + FE</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#planes">Planes</a>
+                      <a class="nav-link1" href="#planes">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btncnt btn-primary">
                           <a class="text-white" href="#contacto">Contactanos</a></button>
                     </li>
                     </ul>
@@ -62,7 +62,7 @@
                 <h1>Es el momento de llevar</h1> 
                 <h4>TU CONTABILIDAD <br> MÁS FÁCIL <br> QUE NUNCA </h4>
                 <br>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btncnt btn-primary">
                   <a class="text-white" href="#planes">Ver Planes</a></button>
               </div>
             </div>
@@ -73,7 +73,7 @@
       <div class="row aling-items-center">
         <div class="col-md-6">
           <img src="{{url_for('static',filename='/img/Recurso-19.png')}}">
-          <br><br><br><br>
+          <br><br><br>
           <img src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}">
           <br><br>
           <p style="font-size: 15px;">Plataforma pensada para todas aquellas entidades    que deben<br> llevar la contabilidad tanto de personas físicas como jurídicas.<p></p>
@@ -101,10 +101,10 @@
         </br> <img src="{{url_for('static',filename='/img/Recurso-22.png')}}" >
           <br><br><br>
       <img src="{{url_for('static',filename='/img/administracion-personal_Mesa-de-trabajo-1.png')}}">
-      <br><br>
+      <br>
       <p style="font-size: 15px;">Plataforma que colabora con la administración del personal<br> gracias a ser un sistema 100% online, versátil y completo,<br> permitiendo a los usuarios ingresar, visualizar y exportar<br> información tanto global como individual de cada empleado.<p>
         <img src="{{url_for('static',filename='/img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png')}}">
-        <br><br>
+        
         <p style="font-size: 15px;">Además, el sistema puede vincularse con el sistema CME<br> exportando los datos necesarios para hacer el pago y registro<br> en los balances de las empresas.</p>
         <img src="{{url_for('static',filename='/img/modulos-complementarios_Mesa-de-trabajo-1.png')}}">
         <br><br>
@@ -169,8 +169,8 @@
     
     <section id="planes">
       <div class="container py-5 ">
-      <div> <center>
-         <h2 style="font-size: 50px;">Nuestros Planes</h2>
+      <div id=nplanes> <center>
+         <h2 style="font-size: 50px;">NUESTROS PLANES</h2>
           <p><b>Todos nuestros precios son de planes anuales y van + IVA</b></p> </center>
       </div>
     </div>
@@ -185,11 +185,11 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">15</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-building"></i>50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>2 Usuarios</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
               <br>
             </div>
             <div class="card-footer text-muted">
@@ -205,12 +205,12 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">15</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-building"></i>50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>2 Usuarios</p>
-              <p class="card-text"><i class="fa fa-users"></i>200 Trabajadores</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
+              <p class="cardpgan"><i class="fa fa-users"></i>  &nbsp;200 Trabajadores</p>
               <br>
             </div>
             <div class="card-footer text-muted">
@@ -226,15 +226,15 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">20</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-building"></i>50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>2 Usuarios</p>
+              <h6 id="pgan"class="card-title">PAGO ANUAL</h6>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
               <br>
             </div>
             <div class="card-footer text-muted">
-              <button type="button" class ="btn_1" values="coplan3" onclick="click_de_boton(3)">QUIERO COTIZAR</a>
+              <button type="button" class ="btn_3" values="coplan3" onclick="click_de_boton(3)">QUIERO COTIZAR</a>
             </div>
           </div>
         </div>
@@ -246,10 +246,10 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+                <span  class="h5">UF</span><span class="display-3 align-middle">20</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-check"></i>Sujeto a evaluación</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <p class="cardpgan"><i class="fa fa-check"></i>  &nbsp;Sujeto a evaluación</p>
               <br>
             </div>
             <div class="card-footer text-muted">
