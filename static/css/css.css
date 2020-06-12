@@ -19,7 +19,7 @@ html{
   background-size: cover;
   background-position: center;
   height: 60vw;
-  text-align: center;
+  text-align:center;
 }
 
 #MiniContacto{
@@ -45,6 +45,9 @@ html{
 #portada h1{
   font-size: 2vw;
 }
+#olas{
+  position: absolute;
+}
 
 #portada h4{
   font-size: 4vw;
@@ -52,10 +55,12 @@ html{
 }
 
 #responsive h1{
-  font-size: 2vw;
+  font-size: 2.5vw;
+  text-align: center;
 }
 #responsive p{
   font-size: 1,5vw;
+  text-align: center;
 }
 
 #formulario{
@@ -208,4 +213,17 @@ font-weight: 900;
  #formulario p{
   font-weight: 800;
  }
+ .zoom {
+  transition: transform .1s;
+ }
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.elementor-shape-fill2{
+  opacity: 0.10;
+}
+.elementor-shape-fill3{
+  opacity: 0.10;
+}
 
