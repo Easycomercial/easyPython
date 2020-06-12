@@ -14,10 +14,28 @@ html{
   
 }
 
+#conta {
+  overflow: hidden;
+}
+#rrhh {
+  overflow: hidden;
+}
+#erp {
+  overflow: hidden;
+}
+
 #img1{
   position: relative;
-  width: 500px;
+
 }
+#img2{
+  position: relative;
+}
+
+#img3{
+  position: relative;
+}
+
 
 .zoom{
   padding: 10px;
@@ -50,7 +68,8 @@ html{
 }
 
 #MiniContacto{
-    background-color: rgb(47, 89, 143);
+    background: rgb(8,8,105);
+background: linear-gradient(90deg, rgba(8,8,105,1) 30%, rgba(0,129,155,1) 100%);
     color: white;
     text-align: right;
     padding: 10px 30px;
@@ -58,6 +77,11 @@ html{
 
 #SeparacionNav{
     padding: 20px;
+}
+
+.navgrad {
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1) 100%);
 }
 
 #seccion{
@@ -188,7 +212,8 @@ html{
    
  }
  .page-footer{
-   background-color: #e3e4e5;
+   background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1) 100%);
    
  }
  
