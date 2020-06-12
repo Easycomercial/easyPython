@@ -14,16 +14,62 @@ html{
   
 }
 
+#conta {
+  overflow: hidden;
+}
+#rrhh {
+  overflow: hidden;
+}
+#erp {
+  overflow: hidden;
+}
+
+#img1{
+  position: relative;
+
+}
+#img2{
+  position: relative;
+}
+
+#img3{
+  position: relative;
+}
+
+
+.zoom{
+  padding: 10px;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
 .fondo{
-  background-image: url('../img/fondo-2.jpg');
+  background-color: rgb(9,85,137);
   background-size: cover;
   background-position: center;
-  height: 60vw;
-  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.fondo:before{
+  content: "";
+  width: 100%;
+  height: 98%;
+  background-image: url('../img/fondo-2.jpg');
+  filter: brightness(20%);
+  position: absolute;
+  opacity: 0.7; 
+}
+
+.fondotexto{
+ height: 50vw;
 }
 
 #MiniContacto{
-    background-color: rgb(47, 89, 143);
+    background: rgb(8,8,105);
+background: linear-gradient(90deg, rgba(8,8,105,1) 30%, rgba(0,129,155,1) 100%);
     color: white;
     text-align: right;
     padding: 10px 30px;
@@ -31,6 +77,11 @@ html{
 
 #SeparacionNav{
     padding: 20px;
+}
+
+.navgrad {
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1) 100%);
 }
 
 #seccion{
@@ -49,11 +100,25 @@ html{
   font-size: 4vw;
 }
 
+#conta p{
+  font-size: 15px;
+}
+
+#rrhh p{
+  font-size: 15px;
+}
+
+#erp p{
+  font-size: 15px;
+}
+
 #responsive h1{
-  font-size: 3vw;
+  font-size: 2.5vw;
+  text-align: center;
 }
 #responsive p{
-  font-size: 2vw;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
 #formulario{
@@ -147,8 +212,21 @@ html{
    
  }
  .page-footer{
-   background-color: #e3e4e5;
+   background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1) 100%);
    
  }
  
+.modal-body {
+         background-image: url('../img/azulgradiante.jpg');
+}
 
+.modal-body h1{
+  color: white;
+}
+.modal-body p{
+  color: white;
+}
+.modal-body span{
+  color: white;
+}
