@@ -226,4 +226,12 @@ font-weight: 900;
 .elementor-shape-fill3{
   opacity: 0.10;
 }
-
+#nubes{
+  position: relative;
+}
+.elementor-shape-fill4{
+  opacity: 0.1;
+}
+#btnfor {
+  background-color: #095589;
+}
