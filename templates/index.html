@@ -8,7 +8,7 @@
         <link rel="stylesheet"href="{{url_for('static', filename='/css/css.css')}}">
         <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
         <script src="{{url_for('static',filename='/javasc/javas.js/')}}"></script>
-        <link rel="stylesheet"href="{{url_for('static',filename='/fontawesome/css/all.min.css')}}">
+
         <script src="{{url_for('static',filename='/javasc/parallax.js/')}}"></script>
         <style>
 
@@ -27,7 +27,7 @@
             <i class="fa fa-phone" aria-hidden="true"></i> Llámanos: (2) 29291592
         </header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navgrad">
             <img src="{{url_for('static',filename='/img/Logosystem.png')}}" id="logo">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -92,10 +92,9 @@
       </div>
         <div class="col-md-6">
           <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" alt="" width="800px">
-        </div>
-      </div>
     </div>
-</section>
+  </div>
+
 
 <section id="rrhh">
     <div class="container py-3">
@@ -116,9 +115,9 @@
         <br><br>
         <p style="font-size: 15px;">Adicionalmente a estas funcionalidades puede solicitar un<br> modulo complementario para el trabajador con el fin de que<br> este tenga acceso a documentación, certificados e <br>información.</p>
     </div>
-      </div>
-    </div>
-</section>    
+
+</div>
+  
     
   <section id="erp">
     <div class="container py-">
@@ -135,19 +134,22 @@
         <img class="zoom" src="{{url_for('static',filename='/img/informes-gerenciales_Mesa-de-trabajo-1.png')}}">
           
 
-      </div>
+  <div class="container-fluid py-4">
+    <div class="row align-items-center">
       <div class="col-md-6">
         <img src="{{url_for('static',filename='/img/Pantalla-verde.png')}}" class="img-fluid" alt="image" width="800px">
-     
-     
     </div>
-      </div>
-    </div>
-  </section>
+  </div>
+
+  </div>
+
+	<script type="text/javascript" src="{{url_for('static',filename='/javascript/EfectoParallax.js')}}" ></script>
+
+</section>
 
 
-    <section>
-      <div class="container-fluid fondo" id="responsive">
+    <section class="fondo">
+      <div class="container py-4 fondotexto" id="responsive">
         <div class="container d-flex flex-column justify-content-center h-100 align-items-center text-white">
           <div class="row">
             <div class="col-sm-6">
@@ -174,6 +176,8 @@
     </section>
     
     <section id="planes">
+    	        	 <script src="{{url_for('static',filename='/javascript/ventanamodal.js')}}" >
+        	 </script>
       <div class="container py-5 ">
       <div id=nplanes> <center>
          <h2 style="font-size: 50px;">NUESTROS PLANES</h2>
@@ -393,6 +397,7 @@
         <div id="footerderecha">
         <p>©2020 EASY SYSTEMS | Todos los derechos reservados</p>
       </div>
+
       </div>
       <!-- Grid column -->
     </div>
