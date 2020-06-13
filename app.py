@@ -1,11 +1,32 @@
 from flask import Flask, render_template,url_for,request
+<<<<<<< HEAD
+
+from modelo import *
+from flask_mail import Mail, Message
+import os
+
+=======
 from flask_mail import Mail, Message
 
 from modelo import *
+>>>>>>> master
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://local_user:1234@localhost/CONTACTO"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+<<<<<<< HEAD
+db.init_app(app)
+def main():
+	db.create_all()
+
+mail_settings = {
+	"MAIL_SERVER": 'smtp.gmail.com',
+	"MAIL_PORT": 465,
+	"MAIL_USE_TLS": False,
+	"MAIL_USE_SSL": True,
+	"MAIL_USERNAME": "correopruebapatricio@gmail.com",
+	"MAIL_PASSWORD": "patricio1234567"
+=======
 mail_settings = {
 	"MAIL_SERVER":'smtp.gmail.com',
 	"MAIL_PORT":587,
@@ -13,6 +34,7 @@ mail_settings = {
 	"MAIL_USE_SSl":False,
 	"MAIL_USERNAME":'estebansanchezga@gmail.com',
 	"MAIL_PASSWORD":'contraseñafalsa'
+>>>>>>> master
 	}
 
 app.config.update(mail_settings)
@@ -68,4 +90,3 @@ def forma():
 if __name__ == "__main__":
 
 		app.run()
-

@@ -5,13 +5,25 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{{url_for('static', filename='/css/css.css')}}">
-        <link rel="stylesheet" href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{url_for('static',filename='/fontawesome-free-5.13.0-web/css/all.min.css')}}">
+        <link rel="stylesheet"href="{{url_for('static', filename='/css/css.css')}}">
+        <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
+        <script src="{{url_for('static',filename='/javasc/javas.js/')}}"></script>
+
+        <script src="{{url_for('static',filename='/javasc/parallax.js/')}}"></script>
+        <style>
+
+            .slider{
+                background-image: "{{url_for('static',filename='/img/Easysystems-portada-principal-2.jpg')}}"
+                background-size: cover;
+                background-position: center;
+                height: 100px;
+            }
+        </style>
+        
     </head>
     <body>
         <header id="MiniContacto">
-            <i class="fa fa-mail-bulk" aria-hidden="true"></i>  Escríbenos: 𝘃𝗲𝗻𝘁𝗮𝘀@𝗲𝗮𝘀𝘆𝘀𝘆𝘀𝘁𝗲𝗺𝘀.𝗰𝗹  
+           <i class="fa fa-mail-bulk" aria-hidden="true"></i> Escríbenos: 𝘃𝗲𝗻𝘁𝗮𝘀@𝗲𝗮𝘀𝘆𝘀𝘆𝘀𝘁𝗲𝗺𝘀.𝗰𝗹
             <i class="fa fa-phone" aria-hidden="true"></i> Llámanos: (2) 29291592
         </header>
 
@@ -24,24 +36,25 @@
               <div class="nav">
                 <ul class="nav" id="SeparacionNav">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#conta">Contabilidad</a>
+                      <a class="nav-link1 active" href="#conta">Contabilidad</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#rrhh">Recursos Humanos</a>
+                      <a class="nav-link1" href="#rrhh">Recursos Humanos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#erp">ERP + FE</a>
+                      <a class="nav-link1" href="#erp">ERP + FE</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#planes">Planes</a>
+                      <a class="nav-link1" href="#planes">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btncnt btn-primary">
                           <a class="text-white" href="#contacto">Contactanos</a></button>
                     </li>
                     </ul>
               </div>
             </div>
+
           </nav>
 
           <section>
@@ -50,92 +63,81 @@
                 <h1>Es el momento de llevar</h1> 
                 <h4>TU CONTABILIDAD <br> MÁS FÁCIL <br> QUE NUNCA </h4>
                 <br>
-                <button type="button" class="btn btn-primary">
-                  <a class="text-white" href="#planes">Ver Planes
-                  </a>
-                </button>
+                <button type="button" class="btncnt btn-primary">
+                  <a class="text-white" href="#planes">Ver Planes</a></button>
               </div>
+              
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" >  <path class="elementor-shape-fill3" d="M790.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path> 
+            <path class="elementor-shape-fill2"d="M750,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path></svg>
+            
             </div>
+
           </section>
 
-<section>
-<div id="conta">
-  <div class="container-fluid py-4">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col">
-            <img src="{{url_for('static',filename='/img/Recurso-19.png')}} "class="img-fluid"><br><br>
-            <img class="zoom" src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}"><br>
-            <p>Plataforma pensada para todas aquellas entidades que deben llevar la contabilidad tanto de personas físicas como jurídicas.</p>
-         </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='/img/vinculo-sii_Mesa-de-trabajo-1.png')}}"><br>
-            <p>Es una solución 100% web sin aplicaciones de escritorio lo que aumenta su velocidad y accesibilidad ademas de generar la importación automática de los libros de compra y venta desde el Servicio de Impuestos Internos.</p>
-          </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='/img/migracion-de-datos2_Mesa-de-trabajo-1.png')}}"><br>
-            <p>Formatos estándar adaptado para la importación y exportación de datos para su presentación.</p>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-      <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" id="img1" width="800px">
+<section id="conta">
+    <div class="container py-5">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+          <img src="{{url_for('static',filename='/img/Recurso-19.png')}}">
+          <br><br><br>
+          <img class="zoom" src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Plataforma pensada para todas aquellas entidades    que deben<br> llevar la contabilidad tanto de personas físicas como jurídicas.<p></p>
+          <img class="zoom" src="{{url_for('static',filename='/img/vinculo-sii_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Es una solución 100% web sin aplicaciones de escritorio lo que <br>aumenta su velocidad y accesibilidad ademas de generar la <br>importación automática de los libros de compra y venta desde <br>el Servicio de Impuestos Internos.</p>
+          <img class="zoom" src="{{url_for('static',filename='/img/migracion-de-datos2_Mesa-de-trabajo-1.png')}}">
+          <br><br>
+          <p style="font-size: 15px;">Formatos estándar adaptado para la importación y<br> exportación de datos para su presentación.</p>
+      </div>
+        <div class="col-md-6">
+          <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" alt="" width="800px">
     </div>
   </div>
+
+
+<section id="rrhh">
+    <div class="container py-3">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+          <img src="{{url_for('static',filename='/img/Pantalla-recursos-humanos.png')}}" class="img-fluid" alt="" width="800px">
+        </div>
+      <div class="col-md-6">
+        </br> <img src="{{url_for('static',filename='/img/Recurso-22.png')}}" >
+          <br><br><br>
+      <img class="zoom" src="{{url_for('static',filename='/img/administracion-personal_Mesa-de-trabajo-1.png')}}">
+      <br>
+      <p style="font-size: 15px;">Plataforma que colabora con la administración del personal<br> gracias a ser un sistema 100% online, versátil y completo,<br> permitiendo a los usuarios ingresar, visualizar y exportar<br> información tanto global como individual de cada empleado.<p>
+        <img class="zoom" src="{{url_for('static',filename='/img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png')}}">
+        
+        <p style="font-size: 15px;">Además, el sistema puede vincularse con el sistema CME<br> exportando los datos necesarios para hacer el pago y registro<br> en los balances de las empresas.</p>
+        <img class="zoom" src="{{url_for('static',filename='/img/modulos-complementarios_Mesa-de-trabajo-1.png')}}">
+        <br><br>
+        <p style="font-size: 15px;">Adicionalmente a estas funcionalidades puede solicitar un<br> modulo complementario para el trabajador con el fin de que<br> este tenga acceso a documentación, certificados e <br>información.</p>
+    </div>
 
 </div>
-
-<div id="rrhh">
-  <div class="container-fluid py-4">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-      <img src="{{url_for('static',filename='/img/Pantalla-recursos-humanos.png')}}" class="img-fluid" alt="" width="800px" id="img2" >
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col">
-            <img src="{{url_for('static',filename='/img/Recurso-22.png')}} "class="img-fluid"><br><br>
-            <img class="zoom" src="{{url_for('static',filename='/img/administracion-personal_Mesa-de-trabajo-1.png')}}"><br>
-           <p>Plataforma que colabora con la administración del personal gracias a ser un sistema 100% online, versátil y completo, permitiendo a los usuarios ingresar, visualizar y exportar información tanto global como individual de cada empleado.<p>
-         </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='/img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png')}}"><br>
-            <p>Además, el sistema puede vincularse con el sistema CME exportando los datos necesarios para hacer el pago y registro en los balances de las empresas.</p>
-          </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='/img/modulos-complementarios_Mesa-de-trabajo-1.png')}}"><br>
-            <p>Adicionalmente a estas funcionalidades puede solicitar un modulo complementario para el trabajador con el fin de que este tenga acceso a documentación, certificados e información.</p>
-          </div>
-        </div>
-    </div>
-  </div>
-
-</div>    
+  
     
-<div id="erp">
+  <section id="erp">
+    <div class="container py-">
+      <div class="row aling-items-center">
+        <div class="col-md-6">
+        </br> <img src="{{url_for('static',filename='/img/erp.png')}}">
+        <br><br><br>
+        <img class="zoom" src="{{url_for('static',filename='/img/administracion-de-inventario_Mesa-de-trabajo-1.png')}}">
+        <br><br>
+        <img class="zoom" src="{{url_for('static',filename='/img/emision-de-cotizaciones_Mesa-de-trabajo-1.png')}}">
+        <br><br>
+        <img class="zoom" src="{{url_for('static',filename='/img/controles-de-venta_Mesa-de-trabajo-1.png')}}">
+        <br><br>
+        <img class="zoom" src="{{url_for('static',filename='/img/informes-gerenciales_Mesa-de-trabajo-1.png')}}">
+          
 
   <div class="container-fluid py-4">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <div class="row">
-          <div class="col">
-            <img src="{{url_for('static',filename='img/erp.png')}}" class="img-fluid"><br><br>
-            <img class="zoom" src="{{url_for('static',filename='img/administracion-de-inventario_Mesa-de-trabajo-1.png')}}"><br><br>
-         </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='img/emision-de-cotizaciones_Mesa-de-trabajo-1.png')}}"><br><br>
-          </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='img/controles-de-venta_Mesa-de-trabajo-1.png')}}"><br><br>
-          </div>
-          <div class="col">
-            <img class="zoom" src="{{url_for('static',filename='img/informes-gerenciales_Mesa-de-trabajo-1.png')}}"><br><br>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-      <img src="{{url_for('static',filename='/img/Pantalla-verde.png')}}" class="img-fluid" id="img3" alt="" width="800px">
+        <img src="{{url_for('static',filename='/img/Pantalla-verde.png')}}" class="img-fluid" alt="image" width="800px">
     </div>
   </div>
 
@@ -155,17 +157,17 @@
               <p>Plataformas online para Gestiones Contables y Recursos Humanos, las cuales se adaptan a tus necesidades.</p>
             </div>
             <div class="col-sm-6">
-              <h1><i class="fa fa-check"></i>  No requiere instalaciones</h1>
+              <h1><i class="fa fa-check"></i> No requiere instalaciones</h1>
               <p>Facilidad de uso para cualquier persona, solamente con un computador con requerimientos básicos.</p>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <h1><i class="fa fa-user-cog"></i>  Soporte técnico</h1>
+              <h1><i class="fa fa-user-cog"></i> Soporte técnico</h1>
               <p>Totalmente especializado, al momento de tener alguna confusión o problema nuestro equipo te guiará y te ayudará a solucionarlo.</p>
             </div>
             <div class="col-sm-6">
-              <h1><i class="fa fa-cloud-download-alt"></i>  Sin riesgo a perder información</h1>
+              <h1><i class="fa fa-cloud-download-alt"></i> Sin riesgo a perder información</h1>
               <p>Nuestro sistema guarda completamente toda la información generada y crea un respaldo adicional en servidores externos, lo que garantiza el tratamiento y seguridad de los datos.</p>
             </div>
           </div>
@@ -177,8 +179,8 @@
     	        	 <script src="{{url_for('static',filename='/javascript/ventanamodal.js')}}" >
         	 </script>
       <div class="container py-5 ">
-      <div> <center>
-         <h2 style="font-size: 50px;">Nuestros Planes</h2>
+      <div id=nplanes> <center>
+         <h2 style="font-size: 50px;">NUESTROS PLANES</h2>
           <p><b>Todos nuestros precios son de planes anuales y van + IVA</b></p> </center>
       </div>
     </div>
@@ -193,11 +195,13 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">15</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-building"></i>  50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>  2 Usuarios</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <br>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <hr size=""3px color="#999">
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
               <br>
             </div>
             <div class="card-footer text-muted">
@@ -213,12 +217,15 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">15</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">15</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-			  <p class="card-text"><i class="fa fa-building"></i>  50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>  2 Usuarios</p>
-              <p class="card-text"><i class="fa fa-users"></i>  200 Trabajadores</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <br>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <hr size=""6px color="#999">
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
+              <hr size=""6px color="#999">
+              <p class="cardpgan"><i class="fa fa-users"></i>  &nbsp;200 Trabajadores</p>
               <br>
             </div>
             <div class="card-footer text-muted">
@@ -234,16 +241,17 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+                <span class="h5">UF</span><span class="display-3 align-middle">20</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-building"></i>  50 Empresas</p>
-              <p class="card-text"><i class="fa fa-user-check"></i>  2 Usuarios</p>
-              <p class="card-text"><i class="fa fa-users"></i>  200 Trabajadores</p>
+              <h6 id="pgan"class="card-title">PAGO ANUAL</h6>
+              <br>
+              <p class="cardpgan"><i class="fa fa-building"></i>  &nbsp;50 Empresas</p>
+              <hr size=""3px color="#999">
+              <p class="cardpgan"><i class="fa fa-user-check"></i>  &nbsp;2 Usuarios</p>
               <br>
             </div>
             <div class="card-footer text-muted">
-              <button type="button" class ="btn_1" values="coplan3" onclick="click_de_boton(3)">QUIERO COTIZAR</a>
+              <button type="button" class ="btn_3" values="coplan3" onclick="click_de_boton(3)">QUIERO COTIZAR</a>
             </div>
           </div>
         </div>
@@ -255,10 +263,11 @@
             </div>
             <div class="card-block">
               <div>
-                <span class="h5">$</span><span class="display-3 align-middle">20</span>
+                <span  class="h5">UF</span><span class="display-3 align-middle">20</span>
               </div>
-              <h6 class="card-title">PAGO ANUAL</h6>
-              <p class="card-text"><i class="fa fa-check"></i>  Sujeto a evaluación</p>
+              <h6 id="pgan" class="card-title">PAGO ANUAL</h6>
+              <br>
+              <p class="cardpgan"><i class="fa fa-check"></i>  &nbsp;Sujeto a evaluación</p>
               <br>
             </div>
             <div class="card-footer text-muted">
@@ -274,75 +283,82 @@
     </section>
     <!-- Modal -->
 <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <div class="modal-dialog" id="modalt" role="document">
+    <div id="modalvisual1" class="modal-content">
+      <div class="modal-header">
+        <button id="closec" type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button> <br>
-      	<center>
-      		<h1>Cotizar Planes</h1>
-      		<p>Rellena el siguiente formulario con tus datos y nos comunicaremos contigo a la brevedad</p>
-      	</center>
-        	 <script src="{{url_for('static',filename='/javascript/validacioncotizacion.js')}}" >
-        	 </script>
-          <form action="{{ url_for('plan') }}" method="post" onsubmit="return validar()" class="col justify-content-center">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="letramodal">
+        <center>
+        <h1>COTIZAR PLANES</h1>
+        <P> Rellena el siguiente formulario con tus datos y nos comunicaremos a la brevedad</P>
+      </center>
+    </div>
+      <script src="{{url_for('static',filename='/javasc/validaciones.js/')}}"></script>
+          <form action="{{ url_for('planc') }}" method="post" onsubmit="return validacionpl()" class="col justify-content-center">
             <div class="row form-group">
-              <input name="nomcli" type="text" id="nomcli" required placeholder="Nombre y apellido" class="form-control">
+              <input type="text" name="nombreclie" id="nombreclie" required placeholder="Nombre y Apellido" class="form-control">
             </div>
             <div class="row form-group">
-              <input name="emailcli" type="email" id="correocli" required placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefonocli" type="number" id="telefonocli" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+              <input type="email" name="emailclie" id="emailclie" required placeholder="Correo" class="form-control col-6">
+              <input type="number" name="telefonoclie" id="telefonoclie" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
             </div>
             <div class="row form-group">
-              <select name="plan" id="plan" required placeholder="¿Tienes alguna duda?" class="form-control">
-              	<option value="Contabilidad">Contabilidad</option>
-  				<option value="RRHH">Recursos Humanos</option>
-  				<option value="Contabilidad+RRHH">Contabilidad + Recursos humanos</option>
-  				<option value="ERP+FE">ERP + FE</option>
+              <select type="text" name="planclie" id="planclie" required placeholder="Contabilidad" class="form-control">
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="Recursos humanos">Recursos humanos</option>
+                <option value="Contabilidad + RRHH">Contabilidad + RRHH</option>
+                <option value="ERP + FE">ERP + FE</option>
               </select>
             </div>
             <div class="row justify-content-center">
-            <button type=submit class="btn btn-primary col-12" >Solicitar cotización</button>
+            <button id="btnmodal" type="submit" class="btn btn-primary col-12">Solicitar Cotizacion</button>
             </div>
           </form>
+
       </div>
+      
     </div>
   </div>
 </div>
+            
 
 
 <section class="bg-light" id="contacto">
+    <div id="nubes">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice"> <path class="elementor-shape-fill4" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path> </svg>
+    </div>
     <div class="container py-5">
       <div class="row">
+
         <div class="col-md-6" id="formulario">
           <h6>Maneja como todo un profesional tu</h6>
           <h1>CONTABILIDAD</h1>
           <p>Contáctate con nosotros mediante el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
         </div>
         <div class="col-md-6">
-        	 <script src="{{url_for('static',filename='/javascript/validacioncontacto.js')}}" >
-        	 </script>
-          <form action="{{ url_for('forma') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
+          <form action="{{ url_for('formul') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
             <div class="row form-group">
               <input name="nombre" type="text" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
             </div>
             <div class="row form-group">
-              <input name="email" type="email" id="correo" required placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefono" type="number" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+              <input name="email" type="email" id="email" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefono" type="number" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
             </div>
             <div class="row form-group">
               <input name="dudas" type="text" id="dudas" required placeholder="¿Tienes alguna duda?" class="form-control">
             </div>
             <div class="row justify-content-center">
-            <button type=submit class="btn btn-primary col-12" >Enviar</button>
+            <button id="btnfor" type="submit" class="btn btn-primary col-12">Enviar</button>
             </div>
           </form>
         </div>
       </div>
+      
     </div>
-    </section>
-    </body>
     <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
@@ -357,7 +373,7 @@
 
         <!-- Content -->
         <div id="footerizq">
-        <img src="{{url_for('static',filename='img/Logosystem.png')}}" id="logofoo">
+        <img src="{{url_for('static',filename='/img/Logosystem.png')}}" id="logofoo">
         
         </div>
       </div>
@@ -392,4 +408,8 @@
 <!-- Footer -->
 
 
+    </body>
+
+
+    
 </html>
