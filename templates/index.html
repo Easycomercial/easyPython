@@ -7,18 +7,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet"href="{{url_for('static', filename='/css/css.css')}}">
         <link rel="stylesheet"href="{{url_for('static',filename='/css/bootstrap.min.css')}}">
-        <script src="{{url_for('static',filename='/javasc/javas.js/')}}"></script>
-
-        <script src="{{url_for('static',filename='/javasc/parallax.js/')}}"></script>
-        <style>
-
-            .slider{
-                background-image: "{{url_for('static',filename='/img/Easysystems-portada-principal-2.jpg')}}"
-                background-size: cover;
-                background-position: center;
-                height: 100px;
-            }
-        </style>
+        <link rel="stylesheet" href="{{url_for('static',filename='/fontawesome/css/all.min.css')}}">
         
     </head>
     <body>
@@ -74,79 +63,92 @@
 
           </section>
 
-<section id="conta">
-    <div class="container py-5">
-      <div class="row aling-items-center">
-        <div class="col-md-6">
-          <img src="{{url_for('static',filename='/img/Recurso-19.png')}}">
-          <br><br><br>
-          <img class="zoom" src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}">
-          <br><br>
-          <p style="font-size: 15px;">Plataforma pensada para todas aquellas entidades    que deben<br> llevar la contabilidad tanto de personas físicas como jurídicas.<p></p>
-          <img class="zoom" src="{{url_for('static',filename='/img/vinculo-sii_Mesa-de-trabajo-1.png')}}">
-          <br><br>
-          <p style="font-size: 15px;">Es una solución 100% web sin aplicaciones de escritorio lo que <br>aumenta su velocidad y accesibilidad ademas de generar la <br>importación automática de los libros de compra y venta desde <br>el Servicio de Impuestos Internos.</p>
-          <img class="zoom" src="{{url_for('static',filename='/img/migracion-de-datos2_Mesa-de-trabajo-1.png')}}">
-          <br><br>
-          <p style="font-size: 15px;">Formatos estándar adaptado para la importación y<br> exportación de datos para su presentación.</p>
-      </div>
-        <div class="col-md-6">
-          <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" alt="" width="800px">
+<section>
+<div id="conta">
+  <div class="container-fluid py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col">
+            <img src="{{url_for('static',filename='/img/Recurso-19.png')}} "class="img-fluid"><br><br>
+            <img class="zoom" src="{{url_for('static',filename='/img/contabilidad-como-nunca_Mesa-de-trabajo-1.png')}}"><br>
+            <p>Plataforma pensada para todas aquellas entidades que deben llevar la contabilidad tanto de personas físicas como jurídicas.</p>
+         </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='/img/vinculo-sii_Mesa-de-trabajo-1.png')}}"><br>
+            <p>Es una solución 100% web sin aplicaciones de escritorio lo que aumenta su velocidad y accesibilidad ademas de generar la importación automática de los libros de compra y venta desde el Servicio de Impuestos Internos.</p>
+          </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='/img/migracion-de-datos2_Mesa-de-trabajo-1.png')}}"><br>
+            <p>Formatos estándar adaptado para la importación y exportación de datos para su presentación.</p>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <img src="{{url_for('static',filename='/img/pantalla-contabilidad.png')}}" class="img-fluid" id="img1" width="800px">
     </div>
   </div>
 
-
-<section id="rrhh">
-    <div class="container py-3">
-      <div class="row aling-items-center">
-        <div class="col-md-6">
-          <img src="{{url_for('static',filename='/img/Pantalla-recursos-humanos.png')}}" class="img-fluid" alt="" width="800px">
-        </div>
-      <div class="col-md-6">
-        </br> <img src="{{url_for('static',filename='/img/Recurso-22.png')}}" >
-          <br><br><br>
-      <img class="zoom" src="{{url_for('static',filename='/img/administracion-personal_Mesa-de-trabajo-1.png')}}">
-      <br>
-      <p style="font-size: 15px;">Plataforma que colabora con la administración del personal<br> gracias a ser un sistema 100% online, versátil y completo,<br> permitiendo a los usuarios ingresar, visualizar y exportar<br> información tanto global como individual de cada empleado.<p>
-        <img class="zoom" src="{{url_for('static',filename='/img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png')}}">
-        
-        <p style="font-size: 15px;">Además, el sistema puede vincularse con el sistema CME<br> exportando los datos necesarios para hacer el pago y registro<br> en los balances de las empresas.</p>
-        <img class="zoom" src="{{url_for('static',filename='/img/modulos-complementarios_Mesa-de-trabajo-1.png')}}">
-        <br><br>
-        <p style="font-size: 15px;">Adicionalmente a estas funcionalidades puede solicitar un<br> modulo complementario para el trabajador con el fin de que<br> este tenga acceso a documentación, certificados e <br>información.</p>
-    </div>
-
 </div>
-  
+
+<div id="rrhh">
+  <div class="container-fluid py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+      <img src="{{url_for('static',filename='/img/Pantalla-recursos-humanos.png')}}" class="img-fluid" alt="" width="800px" id="img2" >
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col">
+            <img src="{{url_for('static',filename='/img/Recurso-22.png')}} "class="img-fluid"><br><br>
+            <img class="zoom" src="{{url_for('static',filename='/img/administracion-personal_Mesa-de-trabajo-1.png')}}"><br>
+           <p>Plataforma que colabora con la administración del personal gracias a ser un sistema 100% online, versátil y completo, permitiendo a los usuarios ingresar, visualizar y exportar información tanto global como individual de cada empleado.<p>
+         </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='/img/VINCULO-CON-SISTEMA_Mesa-de-trabajo-1.png')}}"><br>
+            <p>Además, el sistema puede vincularse con el sistema CME exportando los datos necesarios para hacer el pago y registro en los balances de las empresas.</p>
+          </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='/img/modulos-complementarios_Mesa-de-trabajo-1.png')}}"><br>
+            <p>Adicionalmente a estas funcionalidades puede solicitar un modulo complementario para el trabajador con el fin de que este tenga acceso a documentación, certificados e información.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>    
     
-  <section id="erp">
-    <div class="container py-">
-      <div class="row aling-items-center">
-        <div class="col-md-6">
-        </br> <img src="{{url_for('static',filename='/img/erp.png')}}">
-        <br><br><br>
-        <img class="zoom" src="{{url_for('static',filename='/img/administracion-de-inventario_Mesa-de-trabajo-1.png')}}">
-        <br><br>
-        <img class="zoom" src="{{url_for('static',filename='/img/emision-de-cotizaciones_Mesa-de-trabajo-1.png')}}">
-        <br><br>
-        <img class="zoom" src="{{url_for('static',filename='/img/controles-de-venta_Mesa-de-trabajo-1.png')}}">
-        <br><br>
-        <img class="zoom" src="{{url_for('static',filename='/img/informes-gerenciales_Mesa-de-trabajo-1.png')}}">
-          
+<div id="erp">
 
   <div class="container-fluid py-4">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="{{url_for('static',filename='/img/Pantalla-verde.png')}}" class="img-fluid" alt="image" width="800px">
+        <div class="row">
+          <div class="col">
+            <img src="{{url_for('static',filename='img/erp.png')}}" class="img-fluid"><br><br>
+            <img class="zoom" src="{{url_for('static',filename='img/administracion-de-inventario_Mesa-de-trabajo-1.png')}}"><br><br>
+         </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='img/emision-de-cotizaciones_Mesa-de-trabajo-1.png')}}"><br><br>
+          </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='img/controles-de-venta_Mesa-de-trabajo-1.png')}}"><br><br>
+          </div>
+          <div class="col">
+            <img class="zoom" src="{{url_for('static',filename='img/informes-gerenciales_Mesa-de-trabajo-1.png')}}"><br><br>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <img src="{{url_for('static',filename='/img/Pantalla-verde.png')}}" class="img-fluid" id="img3" alt="" width="800px">
     </div>
   </div>
 
   </div>
 
-	<script type="text/javascript" src="{{url_for('static',filename='/javascript/EfectoParallax.js')}}" ></script>
+  <script type="text/javascript" src="{{url_for('static',filename='/javascript/EfectoParallax.js')}}" ></script>
 
 </section>
-
 
     <section class="fondo">
       <div class="container py-4 fondotexto" id="responsive">
@@ -297,25 +299,25 @@
         <P> Rellena el siguiente formulario con tus datos y nos comunicaremos a la brevedad</P>
       </center>
     </div>
-      <script src="{{url_for('static',filename='/javasc/validaciones.js/')}}"></script>
-          <form action="{{ url_for('planc') }}" method="post" onsubmit="return validacionpl()" class="col justify-content-center">
+       <script src="{{url_for('static',filename='/javascript/validacioncotizacion.js')}}" ></script>
+           <form action="{{ url_for('plan') }}" method="post" onsubmit="return validar()" class="col justify-content-center">
             <div class="row form-group">
-              <input type="text" name="nombreclie" id="nombreclie" required placeholder="Nombre y Apellido" class="form-control">
+              <input name="nomcli" type="text" id="nomcli" required placeholder="Nombre y apellido" class="form-control">
             </div>
             <div class="row form-group">
-              <input type="email" name="emailclie" id="emailclie" required placeholder="Correo" class="form-control col-6">
-              <input type="number" name="telefonoclie" id="telefonoclie" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
+              <input name="emailcli" type="email" id="correocli" required placeholder="Correo Electronico" class="form-control col-6">
+              <input name="telefonocli" type="number" id="telefonocli" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
             </div>
             <div class="row form-group">
-              <select type="text" name="planclie" id="planclie" required placeholder="Contabilidad" class="form-control">
+              <select name="plan" id="plan" required placeholder="¿Tienes alguna duda?" class="form-control">
                 <option value="Contabilidad">Contabilidad</option>
-                <option value="Recursos humanos">Recursos humanos</option>
-                <option value="Contabilidad + RRHH">Contabilidad + RRHH</option>
-                <option value="ERP + FE">ERP + FE</option>
+          <option value="RRHH">Recursos Humanos</option>
+          <option value="Contabilidad+RRHH">Contabilidad + Recursos humanos</option>
+          <option value="ERP+FE">ERP + FE</option>
               </select>
             </div>
             <div class="row justify-content-center">
-            <button id="btnmodal" type="submit" class="btn btn-primary col-12">Solicitar Cotizacion</button>
+            <button type=submit class="btn btn-primary col-12" >Solicitar cotización</button>
             </div>
           </form>
 
@@ -340,7 +342,9 @@
           <p>Contáctate con nosotros mediante el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
         </div>
         <div class="col-md-6">
-          <form action="{{ url_for('formul') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
+          <script src="{{url_for('static',filename='/javascript/validacioncontacto.js')}}" >
+           </script>
+          <form action="{{ url_for('forma') }}" method="post" onsubmit="return validacion()" class="col justify-content-center">
             <div class="row form-group">
               <input name="nombre" type="text" id="nombre" required placeholder="¿Cuál es tu nombre?" class="form-control">
             </div>
@@ -359,6 +363,7 @@
       </div>
       
     </div>
+  </section>
     <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
