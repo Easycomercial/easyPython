@@ -46,7 +46,7 @@ def plan():
 			subject="Mensaje de prueba",
 			sender=app.config.get("MAIL_USERNAME"),
 			recipients=['estebandidoedm@gmail.com'],
-			body="Hola, mi nombre es " + name_cli + "\ncon email : " + email_cli + "\nteléfono: " + cell_cli + "\n Y quiero cotizar el plan de:\n " + plan+"\n"
+			html="<header><img src='/img/Logosystem.png'></header><p>Hola, mi nombre es " + name_cli + "\ncon email : " + email_cli + "\nteléfono: " + cell_cli + "\n Y quiero cotizar el plan de:\n " + plan+"\n</p>"
 			)
 		mail.send(msg)
 	return render_template("index.html", message="insertado con exito")

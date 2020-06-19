@@ -61,10 +61,11 @@ html{
 
 #MiniContacto{
     background: rgb(8,8,105);
-background: linear-gradient(90deg, rgba(8,8,105,1) 30%, rgba(0,129,155,1) 100%);
+    background: linear-gradient(90deg, rgba(8,8,105,1) 30%, rgba(0,129,155,1) 100%);
     color: white;
     text-align: right;
     padding: 10px 30px;
+    font-size: 12px;
 }
 
 #SeparacionNav{
@@ -110,7 +111,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1)
 }
 
 #responsive h1{
-  font-size: 2.5vw;
+  font-size: 2,5vw;
   text-align: center;
 }
 #responsive p{
@@ -216,6 +217,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(230,230,230,1)
  #modalvisual1{
   width: 100% !important;
   background-image: url('../img/fondomodal.jpeg');
+
  }
  #letramodal{
   color: white;
@@ -293,3 +295,16 @@ font-weight: 900;
 #btnfor {
   background-color: #095589;
 }
+
+  .modal-custom {
+    min-width: 900px;
+    max-width: 1200px
+  }
+
+  .modal-custom-b {
+    height: 500px;
+    padding: 100px 0;
+
+    align-items: center;
+  }
+

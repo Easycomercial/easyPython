@@ -12,7 +12,7 @@
     </head>
     <body>
         <header id="MiniContacto">
-           <i class="fa fa-mail-bulk" aria-hidden="true"></i> Escríbenos: 𝘃𝗲𝗻𝘁𝗮𝘀@𝗲𝗮𝘀𝘆𝘀𝘆𝘀𝘁𝗲𝗺𝘀.𝗰𝗹
+           <i class="fa fa-mail-bulk" aria-hidden="true"></i> Escríbenos: 𝘃𝗲𝗻𝘁𝗮𝘀@𝗲𝗮𝘀𝘆𝘀𝘆𝘀𝘁𝗲𝗺𝘀.𝗰𝗹&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
             <i class="fa fa-phone" aria-hidden="true"></i> Llámanos: (2) 29291592
         </header>
 
@@ -48,7 +48,7 @@
 
           <section>
             <div class="container-fluid portada" id="portada">
-              <div class="container d-flex flex-column justify-content-center h-75 align-items-start">
+              <div class="container-fluid d-flex flex-column justify-content-center h-75 align-items-start">
                 <h1>Es el momento de llevar</h1> 
                 <h4>TU CONTABILIDAD <br> MÁS FÁCIL <br> QUE NUNCA </h4>
                 <br>
@@ -187,7 +187,7 @@
       </div>
     </div>
     
-    <div class="container-fluid py-2">
+    <div class="container py-2">
       <div class="row">
         <div class="col-md-3">
           <div class="card text-center">
@@ -285,14 +285,14 @@
     </section>
     <!-- Modal -->
 <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" id="modalt" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-custom" role="document">
     <div id="modalvisual1" class="modal-content">
-      <div class="modal-header">
-        <button id="closec" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
       <div class="modal-body">
+          <button id="closec" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <br><br>
+        </button>
+        <div class="modal-custom-b">
         <div id="letramodal">
         <center>
         <h1>COTIZAR PLANES</h1>
@@ -306,7 +306,7 @@
             </div>
             <div class="row form-group">
               <input name="emailcli" type="email" id="correocli" required placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefonocli" type="number" id="telefonocli" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+              <input name="telefonocli" type="text" id="telefonocli" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
             </div>
             <div class="row form-group">
               <select name="plan" id="plan" required placeholder="¿Tienes alguna duda?" class="form-control">
@@ -320,9 +320,9 @@
             <button type=submit class="btn btn-primary col-12" >Solicitar cotización</button>
             </div>
           </form>
-
+          </div>
       </div>
-      
+      <br>
     </div>
   </div>
 </div>
@@ -350,7 +350,7 @@
             </div>
             <div class="row form-group">
               <input name="email" type="email" id="email" required placeholder="Correo Electronico" class="form-control col-6">
-              <input name="telefono" type="number" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
+              <input name="telefono" type="text" id="telefono" required placeholder="Teléfono" class="form-control col-6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode >=48 && event.charCode <=57))">
             </div>
             <div class="row form-group">
               <input name="dudas" type="text" id="dudas" required placeholder="¿Tienes alguna duda?" class="form-control">
