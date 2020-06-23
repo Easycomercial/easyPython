@@ -18,7 +18,7 @@ mail_settings = {
 	"MAIL_USE_TLS":True,
 	"MAIL_USE_SSl":False,
 	"MAIL_USERNAME":'estebansanchezga@gmail.com',
-	"MAIL_PASSWORD":'fake'
+	"MAIL_PASSWORD":'contraseñafalsa'
 	}
 
 app.config.update(mail_settings)
@@ -68,7 +68,8 @@ def forma():
 			recipients=['estebandidoedm@gmail.com'],
 			html=render_template('mail2.html',nom=name,mail=email,cel=cell,duda=desc)
 			)
-			
+		with app.open_resource("static/img/Logosystem.png") as fp:
+			msg.attach("Logosystem.png", "image/png", fp.read())
 		mail.send(msg)
 	return render_template("index.html", message="insertado con exito")
 
