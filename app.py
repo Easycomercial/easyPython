@@ -18,7 +18,7 @@ mail_settings = {
 	"MAIL_USE_TLS":True,
 	"MAIL_USE_SSl":False,
 	"MAIL_USERNAME":'estebansanchezga@gmail.com',
-	"MAIL_PASSWORD":'contraseñafalsa'
+	"MAIL_PASSWORD":'fake'
 	}
 
 app.config.update(mail_settings)
@@ -46,7 +46,7 @@ def plan():
 			subject="Mensaje de prueba",
 			sender=app.config.get("MAIL_USERNAME"),
 			recipients=['estebandidoedm@gmail.com'],
-			html="<header><img src='/img/Logosystem.png'></header><p>Hola, mi nombre es " + name_cli + "\ncon email : " + email_cli + "\nteléfono: " + cell_cli + "\n Y quiero cotizar el plan de:\n " + plan+"\n</p>"
+			html=render_template('mail1.html',nom=name_cli,mail=email_cli,cel=cell_cli,plan=plan)
 			)
 		mail.send(msg)
 	return render_template("index.html", message="insertado con exito")
@@ -66,8 +66,9 @@ def forma():
 			subject="Mensaje de prueba",
 			sender=app.config.get("MAIL_USERNAME"),
 			recipients=['estebandidoedm@gmail.com'],
-			body="Hola, mi nombre es " + name + "\ncon email : " + email + "\nteléfono: " + cell + "\n Y tengo la siguiente duda:\n " + desc+"\n"
+			html=render_template('mail2.html',nom=name,mail=email,cel=cell,duda=desc)
 			)
+			
 		mail.send(msg)
 	return render_template("index.html", message="insertado con exito")
 
